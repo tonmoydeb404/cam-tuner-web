@@ -31,29 +31,33 @@ const HeroSection = (props: Props) => {
             clicks.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Link href="#download" id="download">
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary/90 rounded-full min-w-[180px] shadow-lg shadow-primary/20 transition-all hover:shadow-xl hover:shadow-primary/30"
+            {process.env.CHROME_SHOP && (
+              <Link href={process.env.CHROME_SHOP} id="download">
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 rounded-full min-w-[180px] shadow-lg shadow-primary/20 transition-all hover:shadow-xl hover:shadow-primary/30"
+                >
+                  Chrome Webstore
+                  <SiGooglechrome />
+                </Button>
+              </Link>
+            )}
+            {process.env.FIREFOX_SHOP && (
+              <Link
+                href={process.env.FIREFOX_SHOP}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Chrome Webstore
-                <SiGooglechrome />
-              </Button>
-            </Link>
-            <Link
-              href="https://github.com/tonmoydeb404/cam-tuner"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                size="lg"
-                variant="outline"
-                className="rounded-full min-w-[180px]"
-              >
-                Firefox Addon
-                <SiFirefoxbrowser />
-              </Button>
-            </Link>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="rounded-full min-w-[180px]"
+                >
+                  Firefox Addon
+                  <SiFirefoxbrowser />
+                </Button>
+              </Link>
+            )}
           </div>
         </div>
       </div>
