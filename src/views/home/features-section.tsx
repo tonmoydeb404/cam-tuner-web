@@ -10,7 +10,7 @@ type Props = {};
 
 const FeaturesSection = (props: Props) => {
   return (
-    <section className="container mx-auto py-24">
+    <section className="container mx-auto py-24" id="features">
       <h2 className="text-2xl sm:text-3xl font-bold mb-2">
         Features That Put You in Control
       </h2>
