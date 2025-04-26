@@ -16,11 +16,12 @@ export const websiteDetails = {
 export type WebsiteLink = {
   title: string;
   href: string;
+  target?: "_blank";
 };
 export const websiteLinks: WebsiteLink[] = [
   { title: "Features", href: "/#features" },
   { title: "Privacy Policy", href: "/privacy-policy" },
-  { title: "Developer", href: "https://tonmoydeb.com" },
+  { title: "Developer", href: "https://tonmoydeb.com", target: "_blank" },
 ];
 
 export const websiteFeatures = [

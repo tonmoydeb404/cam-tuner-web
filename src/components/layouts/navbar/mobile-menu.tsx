@@ -36,7 +36,9 @@ const MobileMenu = (props: Props) => {
           {websiteLinks.map((item, index) => (
             <SheetClose key={item.href} asChild>
               <Button variant={"outline"} className="justify-start" asChild>
-                <Link href={item.href}>{item.title}</Link>
+                <Link href={item.href} target={item.target}>
+                  {item.title}
+                </Link>
               </Button>
             </SheetClose>
           ))}

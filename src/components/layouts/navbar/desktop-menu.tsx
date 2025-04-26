@@ -10,6 +10,7 @@ const DesktopMenu = (props: Props) => {
         <li key={index}>
           <Link
             href={item.href}
+            target={item.target}
             className="text-sm font-medium hover:text-primary"
           >
             {item.title}
