@@ -46,6 +46,11 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+@utility container {
+  margin-inline: auto;
+  @apply w-full px-5 sm:px-8;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
