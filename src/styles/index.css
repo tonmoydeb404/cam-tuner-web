@@ -44,6 +44,17 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  --animate-bg-moving: bg-moving 3000s linear 0s infinite;
+  @keyframes bg-moving {
+    0% {
+      background-position: 0% 100%;
+    }
+
+    100% {
+      background-position: 10000% 100%;
+    }
+  }
 }
 
 @utility container {
