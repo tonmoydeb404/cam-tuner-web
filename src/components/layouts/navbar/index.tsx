@@ -9,7 +9,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <nav className="fixed top-10 left-1/2 -translate-x-1/2 max-w-2xl w-full px-5">
+    <nav className="fixed top-6 sm:top-10 left-1/2 -translate-x-1/2 max-w-2xl w-full px-5">
       <section className="flex items-center w-full justify-between py-2 border rounded-full px-4 relative bg-card/10 backdrop-blur-md">
         <h2 className="font-bold">
           <Link href={"/"}>{websiteDetails.title}</Link>
