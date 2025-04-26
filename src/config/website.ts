@@ -1,6 +1,7 @@
 export const websiteDetails = {
   title: "CamTuner",
   description: "Customize Your Webcam",
+  github: "https://github.com/tonmoydeb404/cam-tuner",
 };
 
 export type WebsiteLink = {
