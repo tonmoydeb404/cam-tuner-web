@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
 import { SiFirefoxbrowser, SiGooglechrome } from "react-icons/si";
 
@@ -14,13 +15,20 @@ const HeroSection = (props: Props) => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
+          <Image
+            src={"/icons/icon128.png"}
+            alt="CamTuner"
+            width={128}
+            height={128}
+            className="mb-12"
+          />
           <div className="inline-flex items-center justify-center rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary mb-6 animate-fade-in">
             <span className="relative flex h-2 w-2 mr-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
             Browser Extension
-            <span className="max-sm:hidden"> for Webcam Control</span>
+            <span className="max-sm:hidden ml-1">for Webcam Control</span>
           </div>
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl/none mb-6">
             Enhance Your <span className="text-primary">Webcam</span> Experience
